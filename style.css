@@ -18,7 +18,7 @@
 .location:hover + .photo-op {
     position: relative;
     display: block;
-    max-width: 50%;
+    width: auto;
     height: auto;
     padding: 0.5rem 4rem 2rem 4rem;
     transition: opacity 3s;
