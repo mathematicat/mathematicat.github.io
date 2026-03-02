@@ -20,7 +20,7 @@
     display: block;
     width: 100%;
     padding: 0.5rem 4rem 2rem 4rem;
-    transition: opacity 1s;
+    transition: opacity 3s;
 }
 
 /*.photo-op:hover .photo-container {
