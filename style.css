@@ -1,3 +1,28 @@
 .content {
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
+
+.photo-op {
+    display: inline;
+}
+
+.photo-op .photo-container {
+    position: fixed;
+    z-index: 10;
+    top: -100%;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.5rem 4rem 2rem 4rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 64px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    font-family: "Proza Libre", sans-serif;
+    font-size: 1.5rem;
+    transition: top 2s linear, opacity 1s;
+}
+
+.photo-op:hover .photo-container {
+    top: 0;
+    opacity: 1;
+}
