@@ -2,22 +2,34 @@
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-.photo-op {
+.location {
+    color: maroon;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
     display: inline;
 }
 
-.photo-op .photo-container {
-    position: relative;
-    z-index: 10;
-    top: -100%;
-    left: 0;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 0.5rem 4rem 2rem 4rem;
-    transition: top 2s linear, opacity 1s;
+.photo-op {
+    display: none;
+    margin-top: 10px;
 }
 
-.photo-op:hover .photo-container {
+.location:hover + .photo-op {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 4rem 2rem 4rem;
+    transition: opacity 1s;
+}
+
+/*.photo-op:hover .photo-container {
     top: 0;
     opacity: 1;
-}
+} */
+
+/*
+container --> content
+image-overlay --> photo-op
+overlay-box -?> photo-container
+ */
